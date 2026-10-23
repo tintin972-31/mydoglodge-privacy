@@ -31,7 +31,7 @@
     <p>Ma Pension Canine est un jeu où l'on prend soin de chiens. Il est fait pour tout le monde, <strong>enfants compris</strong>.
       Nous collectons le moins de données possible, seulement pour que le jeu fonctionne et que ta partie soit sauvegardée.</p>
     <p><strong>En résumé :</strong> pas de publicité, pas de statistiques sur ta façon de jouer, aucune donnée vendue ni
-      partagée pour de la publicité. Ta partie est sauvegardée en ligne. Sur Android, au parc canin multijoueur, les autres
+      partagée pour de la publicité. Ta partie est sauvegardée en ligne. Au parc canin multijoueur, les autres
       joueurs voient ton chien se promener, mais jamais ton prénom ni rien qui permette de savoir qui tu es.</p>
 
     <h3>Qui est responsable ?</h3>
@@ -49,13 +49,15 @@
         tes objectifs du jour et ta série de connexions</td>
         <td>Sauvegarder ta partie et la retrouver sur un autre téléphone</td><td>Oui, pour jouer</td></tr>
       <tr><td>Ton adresse e-mail et ton nom de compte Google</td>
-        <td>Seulement si tu choisis « Se connecter avec Google », pour récupérer ta partie sur un autre téléphone</td>
+        <td>Seulement si tu choisis « Se connecter avec Google » (sur Android pour l'instant), pour récupérer ta partie
+          sur un autre téléphone</td>
         <td>Non, c'est facultatif</td></tr>
       <tr><td>Des informations techniques transmises automatiquement lors des échanges avec nos serveurs (adresse IP, type
         d'appareil et version du système, identifiants techniques du service Firebase)</td>
         <td>Faire fonctionner la connexion et la sauvegarde, et les protéger contre les abus</td><td>Oui</td></tr>
-      <tr><td>Au parc canin multijoueur (Android) : un identifiant de joueur Unity, lié à ton compte de jeu, et les
-        informations techniques de la connexion (adresse IP, identifiants techniques du service Unity)</td>
+      <tr><td>Au parc canin multijoueur : un identifiant de joueur Unity, lié à ton compte de jeu, et les informations
+        techniques de la connexion (adresse IP, identifiants techniques et données de fonctionnement et de plantage des
+        services Unity)</td>
         <td>Te faire entrer dans un parc avec d'autres joueurs, et protéger le parc contre les abus</td>
         <td>Seulement si tu vas au parc</td></tr>
       <tr><td>Au parc : l'apparence de ton chien (race, collier, taille), ses déplacements et sa vitesse dans le parc</td>
@@ -69,13 +71,14 @@
     <ul>
       <li>Pas de publicité, ni d'identifiant publicitaire.</li>
       <li>Pas d'outil de mesure d'audience : la collecte de Google Analytics pour Firebase est désactivée.</li>
-      <li>Pas de localisation, pas d'accès à tes contacts, photos, micro ou caméra.</li>
+      <li>Pas de localisation précise (pas de GPS) : au parc, ton adresse IP sert seulement à Unity à choisir le serveur
+        le plus proche (ta région approximative). Pas d'accès à tes contacts, photos, micro ou caméra.</li>
       <li>Pas de discussion ni de message avec d'autres joueurs : au parc, il n'y a aucun texte à écrire, aucune photo à
         partager, aucune liste d'amis.</li>
       <li>Aucune vente ni aucun partage de tes données avec des tiers pour de la publicité ou du marketing.</li>
     </ul>
 
-    <h3>Le parc canin multijoueur (Android)</h3>
+    <h3>Le parc canin multijoueur</h3>
     <p>Au bout de la promenade, ton chien entre dans un parc où il retrouve les chiens d'autres joueurs (dix au plus).
       Le jeu choisit le parc tout seul ; aucun parc privé, aucun code à partager.</p>
     <ul>
@@ -89,7 +92,8 @@
         parc ; ils ne sont ni enregistrés ni utilisés ensuite.</li>
       <li>Le parc n'est utilisé que si tu y vas : tant que ton chien n'y est jamais entré, aucune donnée n'est envoyée à
         Unity (sauf si tu supprimes ton compte : le jeu vérifie alors auprès d'Unity s'il existe un joueur Unity à
-        supprimer, sans en créer). Sur iPhone, le parc multijoueur n'est pas encore disponible.</li>
+        supprimer, sans en créer).</li>
+      <li>Les joueurs sur iPhone et sur Android se retrouvent dans les mêmes parcs.</li>
     </ul>
     <p><strong>Prochaines versions.</strong> D'autres fonctions sociales sont prévues : le prénom du chien affiché au
       parc (filtré), des réactions prédéfinies, des amis, le signalement d'un joueur, une question sur ta tranche d'âge et
@@ -153,7 +157,7 @@
     <p>My Dog Lodge is a game about caring for dogs. It is made for everyone, <strong>including children</strong>. We collect as
       little data as possible, only so the game works and your progress is saved.</p>
     <p><strong>In short:</strong> no ads, no tracking of how you play, and your data is never sold or shared for
-      advertising. Your game is saved online. On Android, in the multiplayer dog park, other players see your dog walking
+      advertising. Your game is saved online. In the multiplayer dog park, other players see your dog walking
       around, but never your name or anything that tells them who you are.</p>
 
     <h3>Who is responsible?</h3>
@@ -172,13 +176,13 @@
         login streak</td>
         <td>To save your game and get it back on another phone</td><td>Yes, to play</td></tr>
       <tr><td>Your e-mail address and Google account name</td>
-        <td>Only if you choose "Sign in with Google", to get your game back on another phone</td>
+        <td>Only if you choose "Sign in with Google" (on Android for now), to get your game back on another phone</td>
         <td>No, it's optional</td></tr>
       <tr><td>Technical information sent automatically when talking to our servers (IP address, device type and system
         version, technical IDs of the Firebase service)</td>
         <td>To make sign-in and saving work, and to protect them from abuse</td><td>Yes</td></tr>
-      <tr><td>In the multiplayer dog park (Android): a Unity player ID, linked to your game account, and the technical
-        information of the connection (IP address, technical IDs of the Unity service)</td>
+      <tr><td>In the multiplayer dog park: a Unity player ID, linked to your game account, and the technical information
+        of the connection (IP address, technical IDs and usage and crash data of the Unity services)</td>
         <td>To put you in a park with other players, and to protect the park from abuse</td>
         <td>Only if you go to the park</td></tr>
       <tr><td>In the park: your dog's appearance (breed, collar, size), its movements and speed in the park</td>
@@ -192,13 +196,14 @@
     <ul>
       <li>No ads and no advertising ID.</li>
       <li>No audience measurement: Google Analytics for Firebase collection is turned off.</li>
-      <li>No location, no access to your contacts, photos, microphone or camera.</li>
+      <li>No precise location (no GPS): in the park, your IP address is only used by Unity to pick the nearest server
+        (your approximate region). No access to your contacts, photos, microphone or camera.</li>
       <li>No chatting or messages with other players: in the park there is no text to write, no photo to share and no
         friends list.</li>
       <li>We never sell or share your data with third parties for advertising or marketing.</li>
     </ul>
 
-    <h3>The multiplayer dog park (Android)</h3>
+    <h3>The multiplayer dog park</h3>
     <p>At the end of the walk, your dog enters a park where it meets other players' dogs (ten at most). The game picks
       the park by itself; there are no private parks and no codes to share.</p>
     <ul>
@@ -211,7 +216,8 @@
         they are neither recorded nor used afterwards.</li>
       <li>The park is only used if you go there: as long as your dog has never entered it, no data is sent to Unity
         (except when you delete your account: the game then checks with Unity whether there is a Unity player to
-        delete, without creating one). On iPhone, the multiplayer park is not available yet.</li>
+        delete, without creating one).</li>
+      <li>Players on iPhone and on Android meet in the same parks.</li>
     </ul>
     <p><strong>Future versions.</strong> More social features are planned: your dog's name shown in the park (filtered),
       preset reactions, friends, reporting a player, a question about your age range and parental controls.
