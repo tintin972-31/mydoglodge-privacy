@@ -23,7 +23,7 @@
 <main>
   <h1>Ma Pension Canine · My Dog Lodge</h1>
   <nav><a href="#fr">Français</a><a href="#en">English</a><a href="delete-account.html">Supprimer mon compte / Delete my account</a></nav>
-  <p class="muted">Dernière mise à jour / Last updated: 14 octobre 2026 / October 14, 2026</p>
+  <p class="muted">Dernière mise à jour / Last updated: 23 octobre 2026 / October 23, 2026</p>
 
   <!-- ===================================================== FRANÇAIS ===================================================== -->
   <section id="fr" lang="fr">
@@ -31,7 +31,8 @@
     <p>Ma Pension Canine est un jeu où l'on prend soin de chiens. Il est fait pour tout le monde, <strong>enfants compris</strong>.
       Nous collectons le moins de données possible, seulement pour que le jeu fonctionne et que ta partie soit sauvegardée.</p>
     <p><strong>En résumé :</strong> pas de publicité, pas de statistiques sur ta façon de jouer, aucune donnée vendue ni
-      partagée pour de la publicité. Ta partie est sauvegardée en ligne, et c'est tout.</p>
+      partagée pour de la publicité. Ta partie est sauvegardée en ligne. Sur Android, au parc canin multijoueur, les autres
+      joueurs voient ton chien se promener, mais jamais ton prénom ni rien qui permette de savoir qui tu es.</p>
 
     <h3>Qui est responsable ?</h3>
     <p>Le développeur indépendant de Ma Pension Canine. Contact : <span class="contact">MON_ADRESSE@EXEMPLE.COM</span></p>
@@ -53,6 +54,13 @@
       <tr><td>Des informations techniques transmises automatiquement lors des échanges avec nos serveurs (adresse IP, type
         d'appareil et version du système, identifiants techniques du service Firebase)</td>
         <td>Faire fonctionner la connexion et la sauvegarde, et les protéger contre les abus</td><td>Oui</td></tr>
+      <tr><td>Au parc canin multijoueur (Android) : un identifiant de joueur Unity, lié à ton compte de jeu, et les
+        informations techniques de la connexion (adresse IP, identifiants techniques du service Unity)</td>
+        <td>Te faire entrer dans un parc avec d'autres joueurs, et protéger le parc contre les abus</td>
+        <td>Seulement si tu vas au parc</td></tr>
+      <tr><td>Au parc : l'apparence de ton chien (race, collier, taille), ses déplacements et sa vitesse dans le parc</td>
+        <td>Montrer ton chien aux autres joueurs du même parc, pendant que vous y êtes</td>
+        <td>Seulement si tu vas au parc</td></tr>
     </table>
     <p><strong>Conseil pour les enfants :</strong> choisis un pseudo plutôt que ton vrai prénom, et donne à tes chiens
       des prénoms de chiens, jamais ton nom de famille ni ton adresse.</p>
@@ -62,22 +70,69 @@
       <li>Pas de publicité, ni d'identifiant publicitaire.</li>
       <li>Pas d'outil de mesure d'audience : la collecte de Google Analytics pour Firebase est désactivée.</li>
       <li>Pas de localisation, pas d'accès à tes contacts, photos, micro ou caméra.</li>
-      <li>Pas de discussion avec d'autres joueurs.</li>
+      <li>Pas de discussion ni de message avec d'autres joueurs : au parc, il n'y a aucun texte à écrire, aucune photo à
+        partager, aucune liste d'amis.</li>
       <li>Aucune vente ni aucun partage de tes données avec des tiers pour de la publicité ou du marketing.</li>
+    </ul>
+
+    <h3>Le parc canin multijoueur (Android)</h3>
+    <p>Au bout de la promenade, ton chien entre dans un parc où il retrouve les chiens d'autres joueurs (dix au plus).
+      Le jeu choisit le parc tout seul ; aucun parc privé, aucun code à partager.</p>
+    <ul>
+      <li><strong>Ce que les autres joueurs voient :</strong> ton chien (sa race, son collier, sa taille de chiot ou
+        d'adulte) et ses déplacements dans le parc, comme toi tu vois les leurs.</li>
+      <li><strong>Ce qu'ils ne voient jamais :</strong> ton prénom ou pseudo, le prénom de ton chien, ton compte, ton
+        adresse e-mail, ton âge, ta position.</li>
+      <li><strong>Aucune communication :</strong> pas de messages, pas de texte libre, pas d'amis, pas de partage de
+        photos.</li>
+      <li><strong>Rien n'est gardé du parc :</strong> les déplacements de ton chien ne servent que pendant que tu es au
+        parc ; ils ne sont ni enregistrés ni utilisés ensuite.</li>
+      <li>Le parc n'est utilisé que si tu y vas : tant que ton chien n'y est jamais entré, aucune donnée n'est envoyée à
+        Unity (sauf si tu supprimes ton compte : le jeu vérifie alors auprès d'Unity s'il existe un joueur Unity à
+        supprimer, sans en créer). Sur iPhone, le parc multijoueur n'est pas encore disponible.</li>
+    </ul>
+    <p><strong>Prochaines versions.</strong> D'autres fonctions sociales sont prévues : le prénom du chien affiché au
+      parc (filtré), des réactions prédéfinies, des amis, le signalement d'un joueur, une question sur ta tranche d'âge et
+      un contrôle parental. <strong>Elles ne sont pas dans cette version.</strong> Avant leur arrivée, cette politique
+      sera mise à jour pour les décrire, notamment :</p>
+    <ul>
+      <li>la question d'âge ne gardera que la tranche (« moins de 13 ans » ou « 13 ans et plus »), jamais la date de
+        naissance ;</li>
+      <li>les amis seront désactivés pour les moins de 13 ans ;</li>
+      <li>un contrôle parental permettra de couper le parc et les amis ;</li>
+      <li>le signalement d'un joueur sera transmis au service de modération d'Unity, pour examen.</li>
     </ul>
 
     <h3>Où sont les données, et avec qui ?</h3>
     <p>Ta sauvegarde est stockée chez <strong>Google Firebase</strong> (Firebase Authentication et Cloud Firestore), qui
       agit pour notre compte comme sous-traitant. Les sauvegardes sont stockées dans l'Union européenne (centre de données
       de Paris, France). Les échanges sont chiffrés (HTTPS). Seul ton propre compte peut lire ou modifier ta sauvegarde.</p>
+    <p>Le parc multijoueur fonctionne avec les <strong>services de jeu d'Unity</strong> (Unity Technologies), qui
+      agissent eux aussi pour notre compte comme sous-traitant :</p>
+    <ul>
+      <li><strong>Unity Authentication</strong> : quand tu entres au parc, le jeu envoie à Unity une preuve de ton compte
+        de jeu (le jeton d'identité Firebase, qui contient ton identifiant de compte, et ton adresse e-mail si tu as
+        connecté un compte Google). Unity s'en sert seulement pour vérifier ton compte et y associer ton identifiant de
+        joueur Unity ;</li>
+      <li><strong>Unity Multiplayer</strong> (sessions et réseau du parc) : il réunit les joueurs d'un même parc et
+        transmet les déplacements des chiens entre eux ;</li>
+      <li><strong>Unity Friends</strong> et <strong>Unity Moderation</strong> : prévus pour les amis et le signalement, ils
+        ne sont pas utilisés dans cette version.</li>
+    </ul>
+    <p>Unity Technologies peut traiter ces données hors de l'Union européenne (notamment aux États-Unis) ; ces transferts
+      sont encadrés par les garanties prévues par le RGPD (clauses contractuelles types de la Commission européenne).
+      Les échanges avec Unity sont chiffrés.</p>
 
     <h3>Combien de temps ?</h3>
     <p>Tant que ton compte existe. Si tu demandes la suppression, ta sauvegarde et ton compte sont supprimés dans un délai
-      de 30 jours.</p>
+      de 30 jours. Ton identifiant de joueur Unity est gardé aussi longtemps que ton compte, et supprimé avec lui. Rien de
+      ce qui se passe au parc n'est conservé après ta visite (hors journaux techniques de sécurité tenus par Unity, pour
+      une durée limitée).</p>
 
     <h3>Supprimer ton compte</h3>
-    <p>Dans le jeu : Paramètres &gt; « Supprimer mon compte et ma partie ». Sans accès au jeu : par e-mail. Tout est
-      expliqué sur la page <a href="delete-account.html#fr">Supprimer mon compte</a>.</p>
+    <p>Dans le jeu : Paramètres &gt; « Supprimer mon compte et ma partie » (ton joueur Unity du parc est supprimé en
+      même temps). Sans accès au jeu : par e-mail. Tout est expliqué sur la page
+      <a href="delete-account.html#fr">Supprimer mon compte</a>.</p>
 
     <h3>Tes droits (RGPD)</h3>
     <p>Tu peux demander à voir tes données, à les corriger ou à les <strong>supprimer</strong> (compte et sauvegarde), en
@@ -98,7 +153,8 @@
     <p>My Dog Lodge is a game about caring for dogs. It is made for everyone, <strong>including children</strong>. We collect as
       little data as possible, only so the game works and your progress is saved.</p>
     <p><strong>In short:</strong> no ads, no tracking of how you play, and your data is never sold or shared for
-      advertising. Your game is saved online, and that's it.</p>
+      advertising. Your game is saved online. On Android, in the multiplayer dog park, other players see your dog walking
+      around, but never your name or anything that tells them who you are.</p>
 
     <h3>Who is responsible?</h3>
     <p>The independent developer of My Dog Lodge. Contact: <span class="contact">MON_ADRESSE@EXEMPLE.COM</span></p>
@@ -121,6 +177,13 @@
       <tr><td>Technical information sent automatically when talking to our servers (IP address, device type and system
         version, technical IDs of the Firebase service)</td>
         <td>To make sign-in and saving work, and to protect them from abuse</td><td>Yes</td></tr>
+      <tr><td>In the multiplayer dog park (Android): a Unity player ID, linked to your game account, and the technical
+        information of the connection (IP address, technical IDs of the Unity service)</td>
+        <td>To put you in a park with other players, and to protect the park from abuse</td>
+        <td>Only if you go to the park</td></tr>
+      <tr><td>In the park: your dog's appearance (breed, collar, size), its movements and speed in the park</td>
+        <td>To show your dog to the other players in the same park, while you are there</td>
+        <td>Only if you go to the park</td></tr>
     </table>
     <p><strong>Tip for kids:</strong> pick a nickname rather than your real first name, and give your dogs dog names,
       never your last name or address.</p>
@@ -130,21 +193,65 @@
       <li>No ads and no advertising ID.</li>
       <li>No audience measurement: Google Analytics for Firebase collection is turned off.</li>
       <li>No location, no access to your contacts, photos, microphone or camera.</li>
-      <li>No chatting with other players.</li>
+      <li>No chatting or messages with other players: in the park there is no text to write, no photo to share and no
+        friends list.</li>
       <li>We never sell or share your data with third parties for advertising or marketing.</li>
+    </ul>
+
+    <h3>The multiplayer dog park (Android)</h3>
+    <p>At the end of the walk, your dog enters a park where it meets other players' dogs (ten at most). The game picks
+      the park by itself; there are no private parks and no codes to share.</p>
+    <ul>
+      <li><strong>What other players see:</strong> your dog (its breed, collar, puppy or adult size) and how it moves
+        around the park, just as you see theirs.</li>
+      <li><strong>What they never see:</strong> your first name or nickname, your dog's name, your account, your e-mail
+        address, your age, your location.</li>
+      <li><strong>No communication:</strong> no messages, no free text, no friends, no photo sharing.</li>
+      <li><strong>Nothing from the park is kept:</strong> your dog's movements are only used while you are in the park;
+        they are neither recorded nor used afterwards.</li>
+      <li>The park is only used if you go there: as long as your dog has never entered it, no data is sent to Unity
+        (except when you delete your account: the game then checks with Unity whether there is a Unity player to
+        delete, without creating one). On iPhone, the multiplayer park is not available yet.</li>
+    </ul>
+    <p><strong>Future versions.</strong> More social features are planned: your dog's name shown in the park (filtered),
+      preset reactions, friends, reporting a player, a question about your age range and parental controls.
+      <strong>They are not in this version.</strong> Before they arrive, this policy will be updated to describe them,
+      in particular:</p>
+    <ul>
+      <li>the age question will only keep the range ("under 13" or "13 and over"), never the date of birth;</li>
+      <li>friends will be turned off for players under 13;</li>
+      <li>parental controls will let parents turn off the park and friends;</li>
+      <li>reports about a player will be sent to Unity's moderation service for review.</li>
     </ul>
 
     <h3>Where is the data, and who handles it?</h3>
     <p>Your saved game is stored with <strong>Google Firebase</strong> (Firebase Authentication and Cloud Firestore), acting
       on our behalf as a data processor. Saved games are stored in the European Union (Paris, France data center).
       All exchanges are encrypted (HTTPS). Only your own account can read or change your saved game.</p>
+    <p>The multiplayer park runs on <strong>Unity's game services</strong> (Unity Technologies), also acting on our behalf
+      as a data processor:</p>
+    <ul>
+      <li><strong>Unity Authentication</strong>: when you enter the park, the game sends Unity a proof of your game
+        account (the Firebase ID token, which contains your account ID, and your e-mail address if you connected a
+        Google account). Unity only uses it to check your account and link your Unity player ID to it;</li>
+      <li><strong>Unity Multiplayer</strong> (park sessions and network): it brings the players of a park together and
+        relays the dogs' movements between them;</li>
+      <li><strong>Unity Friends</strong> and <strong>Unity Moderation</strong>: planned for friends and reporting, they
+        are not used in this version.</li>
+    </ul>
+    <p>Unity Technologies may process this data outside the European Union (in particular in the United States); these
+      transfers are covered by the safeguards provided by the GDPR (European Commission standard contractual clauses).
+      Exchanges with Unity are encrypted.</p>
 
     <h3>How long?</h3>
-    <p>As long as your account exists. If you ask for deletion, your saved game and account are deleted within 30 days.</p>
+    <p>As long as your account exists. If you ask for deletion, your saved game and account are deleted within 30 days.
+      Your Unity player ID is kept as long as your account and deleted with it. Nothing that happens in the park is kept
+      after your visit (apart from technical security logs kept by Unity for a limited time).</p>
 
     <h3>Deleting your account</h3>
-    <p>In the game: Settings &gt; "Delete my account and game". Without access to the game: by e-mail. Everything is
-      explained on the <a href="delete-account.html#en">Delete my account</a> page.</p>
+    <p>In the game: Settings &gt; "Delete my account and game" (your Unity park player is deleted at the same time).
+      Without access to the game: by e-mail. Everything is explained on the
+      <a href="delete-account.html#en">Delete my account</a> page.</p>
 
     <h3>Your rights (GDPR)</h3>
     <p>You can ask to see, correct or <strong>delete</strong> your data (account and saved game) by writing to
